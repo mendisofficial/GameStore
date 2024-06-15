@@ -1,0 +1,25 @@
+GET http://localhost:5191/games
+###
+GET http://localhost:5191/games/1
+###
+POST http://localhost:5191/games
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genre": "Survival",
+  "price": 59.99,
+  "releaseDate": "2009-05-17"
+}
+###
+PUT http://localhost:5191/games/1
+Content-Type: application/json
+
+{
+  "name": "Street Fighter II Turbo",
+  "genre": "Fighting",
+  "price": 3.99,
+  "releaseDate": "2020-03-03"
+}
+###
+DELETE http://localhost:5191/games/2
