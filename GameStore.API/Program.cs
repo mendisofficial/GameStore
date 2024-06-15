@@ -60,6 +60,10 @@ app.MapPost("games", (CreateGameDTO newGame) => {
 app.MapPut("games/{id}", (int id, UpdateGameDTO updatedGame) => {
     var index = games.FindIndex(game => game.Id == id);
 
+    if (index == -1){
+        return Results.NotFound();
+    }
+
     games[index] = new GameDTO(
         id,
         updatedGame.Name,
