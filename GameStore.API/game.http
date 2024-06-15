@@ -1,6 +1,6 @@
 GET http://localhost:5191/games
 ###
-GET http://localhost:5191/games/4
+GET http://localhost:5191/games/3
 ###
 POST http://localhost:5191/games
 Content-Type: application/json
