@@ -12,7 +12,7 @@ Content-Type: application/json
   "releaseDate": "2009-05-17"
 }
 ###
-PUT http://localhost:5191/games/1
+PUT http://localhost:5191/games/5
 Content-Type: application/json
 
 {
